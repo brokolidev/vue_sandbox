@@ -15,8 +15,14 @@
             <message title="Hello World!!" body="Lorem ipsum dolor sit amet"></message>
             <message title="Hello World!!" body="Lorem ipsum dolor sit amet"></message>
             <message title="Hello World!!" body="Lorem ipsum dolor sit amet"></message>
+
+            <button class="button is-link" @click="showModal = true">Show Modal</button>
+
+            <modal v-if="showModal" @close="showModal = false"></modal>
+
         </div>
     </section>
+    
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script src="main.js"></script>
 </body>
