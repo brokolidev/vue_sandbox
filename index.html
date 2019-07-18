@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <title>Vue Sandbox Index Page</title>
 </head>
+
 <body>
-    <h1>Hello Vue!</h1>
-
-    <div id="root">
-        <input type="text" id="input" v-model=message>
-
-        <p>The value of the input is {{ message }}</p>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-
-    <script>
-        new Vue({
-            el: '#root',
-            data: {
-                message: 'Hello Vue!!'
-            },
-        });
-    </script>
+    <section class="section">
+        <div id="root" class="container">
+            <message title="Hello World!!" body="Lorem ipsum dolor sit amet"></message>
+            <message title="Hello World!!" body="Lorem ipsum dolor sit amet"></message>
+            <message title="Hello World!!" body="Lorem ipsum dolor sit amet"></message>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
